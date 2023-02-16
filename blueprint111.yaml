@@ -23,14 +23,12 @@ blueprint:
           manufacturer: _TZ3000_qja6nq5z
           model: TS004F
           multiple: false
-    light:
-      name: Light(s)
-      description: The light(s) to control
-      selector:
-        target:
-          entity:
-            domain: light
-    step_percent:
+    condition:
+  condition: device
+        device_id: ""
+        domain: ""
+        entity_id: ""
+        step_percent:
       name: Light step
       description: Light pecent change for each knob step
       selector:
